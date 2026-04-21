@@ -1,0 +1,144 @@
+body {
+  background: linear-gradient(135deg, #dc86c9, #ece97b);
+  height: 96vh;
+  margin: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#mainCard{
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background: rgba(242, 176, 231, 0.745);
+  z-index: 1; /*Emojis on the background of the card*/
+}
+    
+.title{
+  vertical-align: top;
+  margin-bottom: 10px;
+  font-family: serif;
+  font-size: 25px;
+  color: rgb(255, 62, 210);
+}
+
+.message{
+  white-space: pre-line; /*This is for the text to be written in followed lines*/
+  font-family: cursive;
+
+}
+
+.buttons{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 20px;
+}
+
+#yesBtn{
+  border: none;
+  border-radius: 25px;
+  height: 35px;
+  width: 25%;
+  cursor: pointer;
+  background-color: rgb(247, 247, 106);
+  transition: transform 0.4s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+
+#noBtn{
+  border: none;
+  border-radius: 25px;
+  height: 35px;
+  width: auto;
+  cursor: pointer;
+  background-color:rgb(249, 130, 245);
+  transition: transform 0.4s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+  
+.emoji{
+  position: fixed;
+  top: 100px;
+  font-size: 30px;
+  opacity: 0.8;
+  animation: float 10s linear infinite;
+}
+
+@keyframes float {
+  from { transform: translateY(96vh);}
+  to { transform: translateY(-10vh);}
+}
+
+.polaroid {
+  position: absolute;
+  width: 120px;
+  background: white;
+  padding: 10px 10px 25px;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transform: translateY(110vh) rotate(var(--rot));
+  animation: drift 14s linear infinite;
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+@keyframes drift {
+  from { transform: translateY(110vh) rotate(var(--rot)); }
+  to { transform: translateY(-120vh) rotate(var(--rot)); }
+}
+
+#revealCard{
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background: rgba(242, 176, 231, 0.745);
+  font-family: cursive;
+  font-size: 1px;
+  z-index: 1;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.reveal {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+#revealCard img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.caption {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #000000;
+}
+
+p{
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  position: absolute;
+  bottom: -10px;
+  left: 16px;
+  z-index: 3;
+}
