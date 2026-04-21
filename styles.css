@@ -12,7 +12,7 @@ body {
   width: 300px;
   padding: 20px;
   border-radius: 20px;
-  background-color: aliceblue;
+  background-color: rgb(0, 0, 0);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   background: rgba(242, 176, 231, 0.745);
