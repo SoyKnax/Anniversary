@@ -29,8 +29,7 @@ body {
 
 .message{
   white-space: pre-line; /*This is for the text to be written in followed lines*/
-  font-family: cursive;
-
+  font-family: serif;
 }
 
 .buttons{
@@ -47,10 +46,10 @@ body {
   height: 35px;
   width: 25%;
   cursor: pointer;
+  color: rgb(0, 0, 0);
   background-color: rgb(247, 247, 106);
   transition: transform 0.4s cubic-bezier(0.235, 0, 0.05, 0.95);
 }
-
 
 #noBtn{
   border: none;
@@ -58,6 +57,7 @@ body {
   height: 35px;
   width: auto;
   cursor: pointer;
+  color: rgb(0, 0, 0);
   background-color:rgb(249, 130, 245);
   transition: transform 0.4s cubic-bezier(0.235, 0, 0.05, 0.95);
 }
@@ -104,11 +104,10 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   background: rgba(242, 176, 231, 0.745);
-  font-family: cursive;
+  font-family: serif;
   font-size: 1px;
   z-index: 1;
 }
-
 
 .hidden {
   display: none;
