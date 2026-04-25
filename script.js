@@ -38,6 +38,18 @@ photos.forEach((src, index) => {
   document.body.appendChild(p);
 });
 
+const startBtn = document.getElementById("hereBtn");
+const introCard = document.getElementById("introCard");
+const mainCard = document.getElementById("mainCard");
+const audio = document.getElementById("player");
+
+startBtn.addEventListener("click", () => {
+  audio.play(); // start music
+
+  introCard.style.display = "none"; // hide intro
+  mainCard.style.display = "block"; // show main content
+});
+
 const noTexts = [
   "ARE YOU SURE?🥺",
   "PLEASEEE😣",
@@ -66,5 +78,8 @@ yesBtn.addEventListener("click", () => {
   const reveal = document.getElementById("revealCard");
   reveal.classList.remove("hidden");
   reveal.classList.add("reveal");
+
+  mainCard.style.display = "none"; // hide main
+  revealCard.style.display = "block"; // show hidden content
 });
 
