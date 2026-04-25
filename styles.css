@@ -22,7 +22,9 @@ body {
 .title{
   vertical-align: top;
   margin-bottom: 10px;
-  font-family: serif;
+  font-family: "Unkempt", cursive;
+  font-weight: 700;
+  font-style: normal;
   font-size: 25px;
   color: rgb(255, 62, 210);
 }

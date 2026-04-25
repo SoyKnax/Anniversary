@@ -55,7 +55,7 @@ noBtn.addEventListener("click", () => {
   yesBtn.style.transform = `scale(${1 + count * 0.15})`;
 
   if (count < noTexts.length) {
-    noBtn.innerText = noTexts[count + 0];
+    noBtn.innerText = noTexts[count + 0]; //Changed this from -1 to + 0 so the last phrase of the array could show up.
   } else {
     noBtn.classList.add("hidden");
   }
